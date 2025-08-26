@@ -60,6 +60,10 @@ spring:
     hikari:
       idle-timeout: 600000  #10 min
       max-lifetime: 1800000 #30 min
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 
   #runningtime environment
