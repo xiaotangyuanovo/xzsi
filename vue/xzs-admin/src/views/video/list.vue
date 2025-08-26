@@ -2,7 +2,8 @@
   <div class="app-container">
     <div style="margin-bottom:20px;">
       <el-input v-model="title" placeholder="视频标题" style="width:200px;margin-right:10px" />
-      <el-upload :action="uploadUrl" :data="{title: title}" :show-file-list="false" @success="handleSuccess">
+      <el-upload :action="uploadUrl" :data="{title: title}" :show-file-list="false"
+                 :with-credentials="true" :headers="{ 'request-ajax': true }" @success="handleSuccess">
         <el-button type="primary">上传视频</el-button>
       </el-upload>
     </div>
