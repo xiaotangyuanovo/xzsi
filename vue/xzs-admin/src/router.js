@@ -163,6 +163,18 @@ const constantRoutes = [
     ]
   },
   {
+    path: '/video',
+    component: Layout,
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/video/list'),
+        name: 'VideoList',
+        meta: { title: '视频管理', icon: 'education', noCache: true }
+      }
+    ]
+  },
+  {
     path: '/education',
     component: Layout,
     name: 'EducationPage',
