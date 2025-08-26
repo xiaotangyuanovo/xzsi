@@ -37,7 +37,9 @@ export default {
       this.dialogVisible = true
     },
     playUrl (id) {
+
       return (process.env.VUE_APP_URL || '') + '/api/student/video/stream/' + id
+
     }
   }
 }

@@ -32,7 +32,9 @@ export default {
       title: '',
       dialogVisible: false,
       current: null,
+
       uploadUrl: (process.env.VUE_APP_URL || '') + '/api/admin/video/upload'
+
     }
   },
   created () {
@@ -51,7 +53,9 @@ export default {
       this.dialogVisible = true
     },
     playUrl (id) {
+
       return (process.env.VUE_APP_URL || '') + '/api/admin/video/stream/' + id
+
     }
   }
 }
