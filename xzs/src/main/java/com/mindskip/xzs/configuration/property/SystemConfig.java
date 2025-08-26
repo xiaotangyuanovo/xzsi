@@ -18,6 +18,8 @@ public class SystemConfig {
     private List<String> securityIgnoreUrls;
     private WxConfig wx;
     private QnConfig qn;
+    private String videoPath;
+
 
     /**
      * Gets pwd key.
@@ -89,6 +91,14 @@ public class SystemConfig {
      */
     public void setQn(QnConfig qn) {
         this.qn = qn;
+    }
+
+    public String getVideoPath() {
+        return videoPath;
+    }
+
+    public void setVideoPath(String videoPath) {
+        this.videoPath = videoPath;
     }
 
 }
