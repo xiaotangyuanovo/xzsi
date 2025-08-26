@@ -1,0 +1,7 @@
+CREATE TABLE t_video (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  file_path VARCHAR(512) NOT NULL,
+  create_time DATETIME NOT NULL,
+  deleted BIT DEFAULT b'0'
+);
