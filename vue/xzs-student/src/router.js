@@ -44,6 +44,18 @@ const router = new Router({
         }
       ]
     },
+      {
+        path: '/video',
+        component: Layout,
+        children: [
+          {
+            path: 'index',
+            component: () => import('@/views/video/index'),
+            name: 'VideoIndex',
+            meta: { title: '视频中心' }
+          }
+        ]
+      },
     {
       path: '/question',
       component: Layout,
