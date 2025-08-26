@@ -22,6 +22,7 @@
         <el-menu-item index="/index">首页</el-menu-item>
         <el-menu-item index="/paper/index">试卷中心</el-menu-item>
         <el-menu-item index="/record/index">考试记录</el-menu-item>
+        <el-menu-item index="/video/index">视频中心</el-menu-item>
         <el-menu-item index="/question/index">错题本</el-menu-item>
       </el-menu>
       <div>
@@ -85,7 +86,7 @@ export default {
   },
   methods: {
     routeSelect (path) {
-      let topPath = ['/', '/index', '/paper/index', '/record/index', '/question/index']
+      let topPath = ['/', '/index', '/paper/index', '/record/index', '/video/index', '/question/index']
       if (topPath.indexOf(path)) {
         return path
       }
